@@ -1,0 +1,45 @@
+.navbarContainer2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F8F8;
+    padding: 8px 40px 8px 0px;
+    transform: translateX(-10px);
+    transition: border ease 0.2s;
+     .navbarLinkBg2 {
+        text-decoration: none;
+        color: black;
+        font-family: 'Manrope';
+        font-weight: 300;
+        font-size: auto;
+
+        width: fit-content;
+        margin: 0px 40px 0px 40px;
+
+        transition: font-weight ease 300ms;
+        
+
+        
+
+        &:before {
+            display: block;
+            content: attr(title);
+            font-weight: bold;
+            height: 0;
+            visibility: hidden;
+
+            
+        }
+        &:hover{
+            font-weight: bold;
+            //transform: translateX(-1px);
+        }
+     }:first-child {
+        margin-left: 0px;
+        margin-right: 60px;
+     }:nth-child(3){
+         margin-left: 90px;
+         margin-right: 0px;
+         
+     }
+}

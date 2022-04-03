@@ -1,0 +1,36 @@
+.navbarContainer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px 25px 10px;
+    box-shadow: 0px 10px 60px -40px #c7c7c7;
+    .navbarLinkBg {
+        color: black;
+        font-family: 'Manrope';
+        font-weight: 300;
+        font-size: 25px;
+        text-decoration: none;
+        
+        letter-spacing: 0.5px;
+
+
+        &:hover {
+            border-bottom: 1px solid #000000;
+        }
+
+        
+    }
+    .navbarLogo {
+        width: 150px;
+        padding: 0px 80px 0px 80px;
+        opacity: 80%;
+
+        transition: opacity ease 300ms;
+
+        &:hover {
+            opacity: 100%;
+            transform: scale(2px, 2px);
+        }
+    }
+}
