@@ -1,21 +1,21 @@
 import React from 'react'
+import { Link, useHref } from 'react-router-dom'
 
 import "./sass/navbar2.scss"
 
-const Navbar2 = () => {
+const Navbar2 = (props) => {
+
     return (
         <div className='navbarContainer2'>
-            <a className='navbarLinkBg2' title='PORTFOLIO' href='https://google.co.in'>PORTFOLIO</a>
-    
-           
-            <a className='navbarLinkBg2' title='TECH STACK' href='https://google.co.in'>TECH STACK</a>
-            <a className='navbarLinkBg2' title='GITHUB' href='https://google.co.in'>GITHUB</a>
-    
-            
-    
-    
+           {props.Objects.map( (res) => {
+               return (
+                   <a title={res.name} className='navbarLinkBg2' key={res.id} href={res.link}>{res.name}</a>
+               )
+           })}
         </div>
-      )
-    }
+    )
 
+}
+    
+  
 export default Navbar2

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom"
 import App from "./App.js";
 
@@ -12,12 +12,15 @@ import Masters from "./pages/Masters.js";
 
 ReactDOM.render(
     <BrowserRouter>
-    
         <Routes>
-            <Route path="/" element={<App />}></Route>
-            <Route path="/arke" element={<Arke />}></Route>
-            <Route path="/masters" element={<Masters />}></Route>
+            <Route path="/" element={<App />} />
+            <Route path="/arke" element={<Arke />} />
+            <Route path="/masters" element={<Masters />} />
+            <Route path="/tech_stack" element={<App />} />
+ 
         </Routes>
-    
     </BrowserRouter>
-    , document.getElementById("root"))
+    , document.getElementById('root'))
+
+
+
