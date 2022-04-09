@@ -1,3 +1,182 @@
-body {
-    color: green
+
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+
+
+   
 }
+
+$day1: #FFFFFF;
+$day2: #F8F8F8;
+$day3: #000000;
+
+$dark1: #000000;
+$dark2: #0B0B0B;
+$dark3: #343434;
+
+
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+
+
+    #root {
+        width: 100%;
+        .appContainer {
+            .navbarContainer {
+                width: 100%;
+                height: 100px;
+
+                .navbarLogo {
+                    width: 100px;
+                    margin: 0% 40px 0% 60px;
+                }
+
+                .navbarLinkBg {
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+}
+
+
+@include media-breakpoint-up(sm) {
+
+    body {
+        display: flex;
+        justify-content: center;
+
+ 
+        #root {
+            width: 100%;
+            .appContainer {
+                .navbarContainer {
+                    width: 100%;
+                    height: 120px;
+
+                    .navbarLogo {
+                        width: 120px;
+                        margin: 0% 100px 0% 120px;
+                    }
+
+                    .navbarLinkBg {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+
+   
+}
+
+@include media-breakpoint-up(md) {
+
+  
+       
+    
+}
+
+@include media-breakpoint-up(lg) {
+
+    body {
+        display: flex;
+        justify-content: center;
+
+ 
+        #root {
+            width: 100%;
+            .appContainer {
+                .navbarContainer {
+                    width: 100%;
+                    height: 156px;
+
+                    .navbarLogo {
+                        width: 150px;
+                        margin: 0% 100px 0% 120px;
+                    }
+
+                    .navbarLinkBg {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
+
+@include media-breakpoint-up(xl) {
+
+    
+
+    
+}
+
+@include media-breakpoint-up(xxl) {
+    
+}
+
+@media (prefers-color-scheme: light) {
+
+
+    body {
+        #root {
+            .appContainer {
+                .navbarContainer {
+                    
+                    box-shadow: 0px 10px 60px -40px #c7c7c7;
+
+                    .navbarLinkBg {
+                        color: $dark1;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+
+    body {
+        background-color: #000000;
+
+        #root {
+            .appContainer {
+                .navbarContainer {
+
+                    border: 1px solid $dark3;
+                    
+                    
+                    .navbarLinkBg {
+                        color: $day2;
+                    }
+
+                    .navbarLogo {
+                        filter: invert(100%) sepia(9%) saturate(151%) hue-rotate(185deg) brightness(114%) contrast(100%);
+
+
+                        
+                    }
+
+                }
+            }
+        }
+    }
+
+    
+}
+
