@@ -15,6 +15,7 @@ import Navbar2 from './Navbar2'
 const Navbar = () => {
   
 
+  
 
   return (
     <div className='navbarContainer'>
