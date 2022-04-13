@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Navbar2 from '../components/Navbar2'
-import NavbarManager from '../components/NavbarManager'
+
+import NavbarManager from '../components/Navbar/NavbarManager'
+import Slideview from '../components/SlideView/Slideview'
 
 const Arke = () => {
 
@@ -15,7 +15,8 @@ const Arke = () => {
 
   return (
     <div>
-        <NavbarManager importLinks={navbar2Items} />
+        <NavbarManager />
+        <Slideview />
         
     </div>
   )

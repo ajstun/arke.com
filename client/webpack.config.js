@@ -28,6 +28,11 @@ module.exports = {
                 use: { 
                     loader: "url-loader"
                 }
+            },
+
+            {
+                test: /\.(png)$/i,
+                loader: "file-loader"
             }
         ]
     },

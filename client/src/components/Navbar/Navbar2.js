@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useHref } from 'react-router-dom'
 
-import "./sass/navbar2.scss"
+import "../sass/navbar2.scss"
 
 const Navbar2 = (props) => {
 
