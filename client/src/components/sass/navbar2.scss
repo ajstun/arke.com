@@ -6,6 +6,9 @@
     padding: 8px 40px 8px 0px;
     transform: translateX(-10px);
     transition: border ease 0.2s;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 
     
 
