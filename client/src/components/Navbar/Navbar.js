@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import "../sass/navbar.scss"
+import "./navbar.scss"
 
 import logo from '../../images/logo_aj_dark.svg'
 
