@@ -1,0 +1,98 @@
+
+
+.sgalleryContainer {
+
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+
+    .sgallerySquare {
+
+
+
+        width: 800px;
+        padding: 20px 0px 0px 0px;
+        border: 1px solid rgb(222, 222, 222);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0px 10px 60px -40px #505050;
+
+        .sgalleryThumbnailContainer {
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            
+            .sgalleryThumbnail {
+
+                position: relative;
+                overflow: visible;
+
+                img {                    
+                   width: 120px;
+                   margin: 20px 40px 40px 20px;
+                }
+
+               
+                &:hover {
+                    
+                    &::after {
+                        content: attr(id);
+                        display: block;
+                        visibility: visible;
+                        overflow-x: visible;
+                        width: fit-content;
+                        font-size: 15px;
+                        opacity: 80%;
+                        position: absolute;
+                        margin-top: -140px;
+                        margin-right: -120px;
+                        
+                        
+                        
+                        
+                        background-color: black;
+                        color: white;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        padding: 10px 20px 10px 20px;
+                        margin: calc((-80%) - (60px)) calc((-100%) - (30px)) 0px calc(100% - 80px);
+                    }
+                }
+
+                
+            
+            }
+
+    
+
+    }
+
+
+    .sgalleryMenu {
+
+        display: flex;
+
+        justify-content: center;
+        background-color: #f8f8f8;
+
+        width: 100%;
+        height: 100px
+        ;
+
+        .sgalleryLink {
+            position: relative;
+            padding-top: 4%;
+            font-family: 'Manrope';
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+   
+    }
+}

@@ -47,7 +47,9 @@ const Gallery = (props) => {
             variants={variant}
             animate={control}
             initial={{ y: 50 }}
-            transition={{ duration: 0.75, ease: "easeInOut"  }}
+            transition={{ duration: 0.75, ease: "easeInOut", delay: 1  }}
+
+            whileHover={{ opacity: 0 }}
 
             
             className='galleryThumbnail' src={verge}>
@@ -64,7 +66,7 @@ const Gallery = (props) => {
             initial= "hidden"
             variants={variant}
             animate={control}
-            transition={{ delay: 0.5, ease: "easeIn" }}
+            transition={{ delay: 1.5, ease: "easeIn" }}
            
             className='galleryMenu'>
 
