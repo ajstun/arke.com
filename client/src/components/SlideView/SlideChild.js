@@ -1,5 +1,5 @@
 import React from 'react'
-import '../sass/slidechild.scss'
+import './slidechild.scss'
 
 const SlideChild = (props) => {
     let importImages = props.importImages

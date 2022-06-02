@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../sass/slideview.scss'
+import './slideview.scss'
 import SlideChild from './SlideChild'
 
 

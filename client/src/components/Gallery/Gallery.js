@@ -12,6 +12,7 @@ import verge from "./Screenshot.png"
 const Gallery = (props) => {
 
 
+  console.log(`${props.fLink}/${props.name}`)
 
   //variant
   const variant = {
@@ -44,15 +45,15 @@ const Gallery = (props) => {
           <div className='galleryThumbnailContainer' >
             <motion.img 
 
-            variants={variant}
-            animate={control}
-            initial={{ y: 50 }}
-            transition={{ duration: 0.75, ease: "easeInOut", delay: 1  }}
+              variants={variant}
+              animate={control}
+              initial={{ y: 50 }}
+              transition={{ duration: 0.75, ease: "easeInOut", delay: 1  }}
 
-            whileHover={{ opacity: 0 }}
+              whileHover={{ opacity: 0 }}
 
-            
-            className='galleryThumbnail' src={verge}>
+              title={props.name}
+              className='galleryThumbnail' src={props.img}>
 
             </motion.img>
           </div>
@@ -70,9 +71,9 @@ const Gallery = (props) => {
            
             className='galleryMenu'>
 
-              <a id='01' className='galleryLink' href='#'>FEATURES</a>
-              <a id='02' className='galleryLink' href='#'>BEHIND THE SCENES</a>
-              <a id='03' className='galleryLink' href='#'>VISIT</a>
+              <a id='01' className='galleryLink' href={props.fLink}>FEATURES</a>
+              <a id='02' className='galleryLink' href={props.btsLink}>BEHIND THE SCENES</a>
+              <a id='03' className='galleryLink' href={props.vLink}>VISIT</a>
 
           </motion.div>
         </div>
