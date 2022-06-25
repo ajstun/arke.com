@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react'
 
+
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import "./gallery.scss"
-
+import { Link, Switch, Router} from 'react-router-dom'
 
 import verge from "./Screenshot.png"
-
+import Features from '../../pages/Portfolio/Features'
 
 
 const Gallery = (props) => {
 
 
-  console.log(`${props.fLink}/${props.name}`)
 
   //variant
   const variant = {
@@ -34,6 +34,14 @@ const Gallery = (props) => {
       control.start("visible")
     }
   }, [control, inView])
+
+  const getLink = (x) => {
+    if(x == "features") {
+      return `/features/${props.name}`
+    } else if(x == "bts") {
+      return `/bts/${props.name}`
+    } else throw Error
+  }
 
   return (
     <motion.div 
@@ -71,9 +79,17 @@ const Gallery = (props) => {
            
             className='galleryMenu'>
 
-              <a id='01' className='galleryLink' href={props.fLink}>FEATURES</a>
-              <a id='02' className='galleryLink' href={props.btsLink}>BEHIND THE SCENES</a>
-              <a id='03' className='galleryLink' href={props.vLink}>VISIT</a>
+             
+
+                <Link to={getLink("features")} id='01' className='galleryLink'>FEATURES</Link>
+                {/* <a id='01' className='galleryLink' href={props.fLink}>FEATURES</a> */}
+                <Link to={getLink("bts")} id='02' className='galleryLink'>BEHIND THE SCENES</Link>
+                <a id='03' className='galleryLink' href={props.vLink}>VISIT</a>
+
+             
+             
+
+             
 
           </motion.div>
         </div>
@@ -85,5 +101,7 @@ const Gallery = (props) => {
     </motion.div>
   )
 }
+
+
 
 export default Gallery
