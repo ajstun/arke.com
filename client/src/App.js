@@ -40,8 +40,6 @@ const App = () => {
 
   })
 
-
-
   return (
     <div className='appContainer'>
         <NavbarManager/>

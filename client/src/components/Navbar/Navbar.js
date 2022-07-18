@@ -19,13 +19,13 @@ const Navbar = () => {
 
   return (
     <div className='navbarContainer'>
-        <Link title='01' className='navbarLinkBg' to="/arke">Arke</Link>
+        <Link title='01' className='navbarLinkBg navbarLinkLeft' to="/arke">Arke</Link>
 
         <Link to="/">
           <img className='navbarLogo'src={logo}></img>
         </Link>
 
-        <Link title='02' className='navbarLinkBg' to="/masters">Masters</Link>
+        <Link title='02' className='navbarLinkBg navbarLinkRight' to="/masters">Masters</Link>
 
         
 
