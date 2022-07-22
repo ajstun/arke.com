@@ -113,18 +113,24 @@ $dark3: #343434;
                 }
             }
             .galleryMenu {
-                padding-left: 10px;                
+                padding-left: 10px;   
+                gap: 40px;             
                 .galleryLink {
                     padding: 20px 0px 20px 0px;                    
                     font-size: 18px;
-                    font-weight: 300;                
+                    font-weight: 300;
+                    //text-align: center;       
+                    &:first-child {
+                        //padding-right: -10px;
+
+                    }         
                     &:not(:last-child) {
-                        padding-right: 50px;
+                        padding-right: 40px;
                 
                         border-right: 1px solid #c7c7c7;
                     }
                     &:last-child {
-                        padding-right: 20px;
+                        padding-right: 30px;
                         font-weight: bold;
                     }
                 }
