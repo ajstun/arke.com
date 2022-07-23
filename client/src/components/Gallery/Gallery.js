@@ -6,7 +6,6 @@ import { useInView } from 'react-intersection-observer'
 import "./gallery.scss"
 import { Link, Switch, Router} from 'react-router-dom'
 
-import verge from "./Screenshot.png"
 import Features from '../../pages/Portfolio/Features'
 
 

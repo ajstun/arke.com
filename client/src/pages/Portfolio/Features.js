@@ -1,6 +1,8 @@
 import React, { Component, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import TestF from '../../components/test-features/TestF'
+import FeaturesGallery from '../../components/Gallery/FeaturesGallery'
+import NavbarManager from '../../components/Navbar/NavbarManager'
+
 
 const Features = () => {
 
@@ -35,7 +37,7 @@ const Features = () => {
       }
     }).then((res) => { res.json()
       .then((response) => {
-         let val = response[2].features
+         let val = response[1].features
          setData(val)  
          console.log(val)        
        })
@@ -46,17 +48,16 @@ const Features = () => {
   }
   
   return(
-    <div> 
-      <h3>Features</h3>
-      {data.length > 0 ? (data.map(x => (
-        console.log(x)
-        
-      ))) : (
-        <p>No Posts</p>
-      )}
+    <div className='appContainer'>
+      <NavbarManager />
+      {/* Mapping & Calling Individual FeaturesGallery Components */}
+      <div className='featuresFlexContainer'>
+        {data.map(x => (  
+            <FeaturesGallery key={x.id} id={x.id} heading={x.heading} image_url={x.image_url} desc={x.desc} />
+        ))}
+      </div>
     </div>
   )
-   
 }
 
 

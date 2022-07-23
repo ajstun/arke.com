@@ -2,7 +2,6 @@ import React, { Component, useEffect, useState } from 'react'
 import Gallery from './components/Gallery/Gallery'
 import NavbarManager from './components/Navbar/NavbarManager'
 
-import Screenshot from './images/Screenshot.png'
 
 
 

@@ -5,7 +5,7 @@
 
 //COLORS
 
-:root {
+
 $day1: #FFFFFF;
 $day2: #F8F8F8;
 $day3: #000000;
@@ -13,7 +13,15 @@ $day3: #000000;
 $dark1: #000000;
 $dark2: #0B0B0B;
 $dark3: #343434;
-}
+
+
+// FONTS
+$manrope-h1: bold 25px Manrope;
+$manrope-p1: 300 20px Manrope;
+
+//COMPONENTS
+$border-1: 0px 10px 60px -40px #505050;
+
 
 //MIXINS
 
@@ -84,6 +92,64 @@ $dark3: #343434;
 
    
 }
+@mixin features-xs {
+
+    width: 100%;
+    
+    .featuresFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .featuresContainer {
+            margin-top: 60px;
+            width: 410px;    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: $day2;
+            border: 1px solid rgb(222, 222, 222);
+            box-shadow:  $border-1;
+
+        .featuresSquare {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 380px;
+            h3{
+                width: 100%;
+                font: $manrope-h1;
+
+                &::after {
+                    content: attr(id);
+                    display: inline-block;
+                    font-size: 25px;
+                    height: 0;
+                    opacity: 10%;
+                    float: right;
+                }
+            }
+            
+            p{
+                width: 100%;
+                text-align: justify;
+                font: $manrope-p1;
+                opacity: 60%;
+
+            }
+
+            img {
+                width: 380px;
+                box-shadow: $border-1;
+                }
+            }
+        }
+    }   
+    
+
+}
+
 // >sm
 @mixin navbar-sm {
     .navbarContainer {
@@ -141,6 +207,64 @@ $dark3: #343434;
    
     
 }
+@mixin features-sm {
+
+    width: 100%;
+    
+    .featuresFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .featuresContainer {
+            margin-top: 60px;
+            width: 410px;    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: $day2;
+            border: 1px solid rgb(222, 222, 222);
+            box-shadow:  $border-1;
+
+        .featuresSquare {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 380px;
+            h3{
+                width: 100%;
+                font: $manrope-h1;
+
+                &::after {
+                    content: attr(id);
+                    display: inline-block;
+                    font-size: 25px;
+                    height: 0;
+                    opacity: 10%;
+                    float: right;
+                }
+            }
+            
+            p{
+                width: 100%;
+                text-align: justify;
+                font: $manrope-p1;
+                opacity: 60%;
+
+            }
+
+            img {
+                width: 380px;
+                box-shadow: $border-1;
+                }
+            }
+        }
+    }   
+    
+    
+}
+
 // >md
 @mixin navbar-md {
     .navbarContainer {
@@ -204,6 +328,64 @@ $dark3: #343434;
     
     
 }
+@mixin features-md {
+    
+    width: 100%;
+    
+    .featuresFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .featuresContainer {
+            margin-top: 60px;
+            width: 410px;    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: $day2;
+            border: 1px solid rgb(222, 222, 222);
+            box-shadow:  $border-1;
+
+        .featuresSquare {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 380px;
+            h3{
+                width: 100%;
+                font: $manrope-h1;
+
+                &::after {
+                    content: attr(id);
+                    display: inline-block;
+                    font-size: 25px;
+                    height: 0;
+                    opacity: 10%;
+                    float: right;
+                }
+            }
+            
+            p{
+                width: 100%;
+                text-align: justify;
+                font: $manrope-p1;
+                opacity: 60%;
+
+            }
+
+            img {
+                width: 380px;
+                box-shadow: $border-1;
+                }
+            }
+        }
+    }   
+    
+    
+}
+
 // >lg
 @mixin navbar-lg {
     .navbarContainer {
@@ -268,6 +450,64 @@ $dark3: #343434;
     
     
 }
+@mixin features-lg {
+
+    width: auto;
+    
+    .featuresFlexContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+
+        .featuresContainer {
+            margin-top: 60px;
+            width: 410px;    
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: $day2;
+            border: 1px solid rgb(222, 222, 222);
+            box-shadow:  $border-1;
+
+        .featuresSquare {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 380px;
+            h3{
+                width: 100%;
+                font: $manrope-h1;
+
+                &::after {
+                    content: attr(id);
+                    display: inline-block;
+                    font-size: 25px;
+                    height: 0;
+                    opacity: 10%;
+                    float: right;
+                    position: relative;
+                    z-index: 0;
+                    
+                }
+            }
+            
+            p{
+                width: 100%;
+                text-align: justify;
+                font: $manrope-p1;
+                opacity: 60%;
+
+            }
+
+            img {
+                width: 380px;
+                box-shadow: $border-1;
+                }
+            }
+        }
+    }   
+}
 
 //BOOTSTRAP
 
@@ -281,6 +521,8 @@ $dark3: #343434;
             @include navbar-xs;
             //home/Gallery
             @include gallery-xs;
+            //features
+            @include features-xs;
            
             
         }
@@ -295,6 +537,8 @@ $dark3: #343434;
             @include navbar-sm;
             //home/Gallery
             @include gallery-sm;
+            //features
+            @include features-sm;
            
         }
     }
@@ -310,6 +554,8 @@ $dark3: #343434;
             @include navbar-md;
             //home/Gallery
             @include gallery-md;
+            //features
+            @include features-md;
             
         }
     }
@@ -330,6 +576,8 @@ $dark3: #343434;
             @include navbar-lg;
             //home/Gallery
             @include gallery-lg;
+            //features
+            @include features-lg;
             
             
         }

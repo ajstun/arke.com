@@ -1,7 +1,6 @@
 import React from 'react'
 
 import NavbarManager from '../components/Navbar/NavbarManager'
-import Slideview from '../components/SlideView/Slideview'
 
 const Arke = () => {
 
